@@ -1,0 +1,39 @@
+void Config_Timer4(){//PB6   MOTOR DC
+	RCC->APB1ENR |= (0x1<<0);
+
+	TIM2->ARR = 5000 - 1;
+	TIM2->PSC = 16 - 1;
+	TIM2->EGR = 0x1;
+	TIM2->CCMR1 = 0x6060;
+	TIM2->CCMR2 = 0x6060;
+	TIM2->CCER = 0x1111;
+	TIM2->CR1 = 0x1;
+}
+void Config_Timer3(){//PA6   SERVO
+	RCC->APB1ENR |=(0x1<<1);
+
+	TIM3->ARR = 19999;
+	TIM3->PSC = 15;
+	TIM3->EGR = 0x1;
+	TIM3->CCMR1 = 0x6060;
+	TIM3->CCER = 0x1111;
+	TIM3->CR1 = 0x1;
+}
+void Config_Timer5(){ //PA0  CHICHARRA
+	RCC->APB1ENR |= (0x1<<3);
+	
+	TIM5->ARR = 5000 - 1;
+	TIM5->PSC = 16 - 1;
+	TIM5->EGR = 0x1;
+	TIM5->CCMR1 = 0x6060;
+	TIM5->CCMR2	 = 0x6060;
+	TIM5->CCER = 0x1111;
+	TIM5->CR1 = 0x1;
+}
+void Config_GPIO(){
+	RCC->AHB1ENR |= (0x15 << 0);
+	GPIOA->MODER |= 0xAAAAAAAA;
+	GPIOB->MODER |= 0xAAAAAAAA;
+	GPIOA->AFR[0] |= 0x22222222;
+	GPIOB->AFR[0] |= 0x22222222;
+}

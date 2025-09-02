@@ -1,0 +1,20 @@
+Dependencies for Project 'Lab 3', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6230000::V6.23::ARMCLANG
+F (.\Lab 3.cpp)(0x651D963A)(-xc++ -std=c++98 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-I"C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include"-I"C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include"-D__UVISION_VERSION="542" -DSTM32F767xx -D_RTE_-o "./objects/lab 3.o" -MMD)
+I (C:\Users\Andres Felipe\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f767xx.h)(0x688D5ECA)
+I (C:\Users\Andres Felipe\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm7.h)(0x6880207C)
+I (C:\Users\Andres Felipe\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h)(0x688D5ECA)
+I (SysTick.h)(0x688D5CCE)
+I (TMatriz.h)(0x688D5CCE)
+I (LCD-Comm-Write.h)(0x688D5CCE)
+I (USART.h)(0x688D5CCE)
+F (.\LCD-Comm-Write.h)(0x688D5CCE)()
+F (.\SysTick.h)(0x688D5CCE)()
+F (.\USART.h)(0x688D5CCE)()
+F (.\TMatriz.h)(0x688D5CCE)()
+F (RTE/Device/STM32F767ZITx/startup_stm32f767xx.s)(0x62D6BBE8)(--target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-I"C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include"-I"C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include"-Wa,armasm,--pd,"__UVISION_VERSION SETA 542" -Wa,armasm,--pd,"STM32F767xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32f767xx.o)
+F (RTE/Device/STM32F767ZITx/system_stm32f7xx.c)(0x62D6BBE8)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-I"C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include"-I"C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include"-D__UVISION_VERSION="542" -DSTM32F767xx -D_RTE_-o ./objects/system_stm32f7xx.o -MMD)
+I (C:\Users\Andres Felipe\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h)(0x688D5ECA)
+I (C:\Users\Andres Felipe\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f767xx.h)(0x688D5ECA)
+I (C:\Users\Andres Felipe\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm7.h)(0x6880207C)
+I (C:\Users\Andres Felipe\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h)(0x688D5ECA)

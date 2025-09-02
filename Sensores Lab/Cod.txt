@@ -1,0 +1,40 @@
+#include <LiquidCrystal.h>
+
+int rs = 9; 
+int e = 8;
+int d4 = 4;
+int d5 = 5;
+int d6 = 6;
+int d7 = 7;
+
+int in = 0;
+int Hum;
+
+LiquidCrystal lcd(rs, e, d4, d5, d6, d7);
+
+void setup() {
+  lcd.begin(16,2);
+  
+  Serial.begin(9600);
+}
+
+void loop() {
+  Hum = analogRead(in)/15;
+  Hum = Hum;
+  Serial.print (abs(Hum));
+  Serial.print ("...");
+  delay(3000);
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Humedad Relativa");
+  delay (3000);
+  lcd.clear();
+  lcd.setCursor(6,0);
+  lcd.print(abs(Hum));
+  lcd.print("%");
+  lcd.setCursor(0,1);
+  lcd.print("voltaje mV :");
+  lcd.setCursor(13,1);
+  lcd.print(Hum*15);
+  delay (3000);
+}

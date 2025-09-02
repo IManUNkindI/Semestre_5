@@ -1,0 +1,13 @@
+En el video de la simulacion, se puede observar como funciona el codigo 
+desarrollado en kail con las interrupciones, sin embargo debido a los recursos del 
+computador donde se raliza la simulacion ocurre un error en el que los pulsadores
+no se actualizan correctamente a os valores reales, por lo que para cambiar de un modo a otro 
+es necesario reiniciar la simulacion, este probelma ocurre al usar la stm32 en proteus, ya que
+si elimino este componente y pruebo tanto los botones como los switches funcionan correctamente,
+ademas solo se adjunta un video de funcionamiento ya qu los 4 codigos funcionan de igual manera
+por lo que la mayor diferenciacion se vé reflejada en los codigos adjuntos, a demas de estar mejor
+explicados allí mediante algunas anotaciones.
+
+Este trabajo fue realizado por:
+Andrés Felipe Bernal Urrea  7003748
+Juan David Medina Pacheco   7004022

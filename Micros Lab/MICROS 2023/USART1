@@ -1,0 +1,89 @@
+#include <stm32f7xx.h>
+#define FREQTRABAHB 16000000
+
+unsigned long int BAUDRATE,Over8;
+
+void SysTick_Init(void);
+void SysTick_Wait(uint32_t n);
+void SysTick_Wait1ms(uint32_t delay);
+int envioDato(int value);	
+
+
+void SysTick_Init(void){
+  SysTick->LOAD = 0x00FFFFFF;
+	SysTick->CTRL = 0x00000005;
+}
+
+void SysTick_Wait(uint32_t n){
+  
+	SysTick->LOAD = n-1;
+	SysTick->VAL = 0;
+	while((SysTick->CTRL&0x00010000)==0);
+}
+
+void SysTick_Wait1ms(uint32_t delay){
+ for(uint32_t i=0; i<delay; i++){
+ SysTick_Wait(FREQTRABAHB/1000);
+ }
+}
+
+int main(){
+    RCC->AHB1ENR |=0xFF;   
+	GPIOG->MODER |= 0x0; // PULSADORES PG0
+	GPIOG->OTYPER &= 0x0;
+	GPIOG->OSPEEDR &= 0x0;
+	GPIOG->PUPDR |= 0x2; // PULL DOWN 
+	
+	//USART 3 PD8(TX) y PD9(RX) 
+	GPIOD->MODER |= 0XA0000;
+	GPIOD->OSPEEDR |= 0XF0000;
+	GPIOD->AFR[1] |=0X77; 
+
+	Over8=0;
+	BAUDRATE= 0x683;
+	
+	USART3->BRR |= BAUDRATE;
+	USART3->CR1 |=(0x2D) | Over8<<15;  
+
+while(1){
+	if((GPIOG->IDR & (0x0))==0x0){
+		SysTick_Wait1ms(500);
+		envioDato('M');	
+	}
+		
+	if((GPIOG->IDR & (0x0))==0x1){
+		SysTick_Wait1ms(500);
+		envioDato('F');
+	}
+}}
+
+
+
+int envioDato(int value) { 
+   UART5->TDR = value;
+   while((UART5->ISR &= 0x80)==0); // BANDERA TRANSMISION ~1 
+   return 0;
+ }
+ 
+ 
+////////////////////////////////////////////////////////////////////////////////////// 
+ //enviar una cadena de caracteres
+void send_string (char *str){
+while (*str) send_data (*str++);
+}
+
+void enviar(char dats){
+USART3->TDR=dats;
+while((USART3->ISR & (1<<7))==(0<<7));
+}
+
+void enviarn( char dats){
+USART3->TDR=dats;
+while((USART3->ISR & (1<<7))==(0<<7));
+}
+
+void cadena(char *cad, int ll){
+for(int i=0;i<16;i++){
+enviar(*(cad+i));
+ }
+}

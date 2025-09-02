@@ -1,0 +1,434 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: laura gutierrez, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+C:\Users\lauri\Desktop\MICROS 2023\Project.uvprojx
+Project File Date:  03/01/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f746xx.s...
+RTE/Device/STM32F746ZGTx/system_stm32f7xx.c(48): warning: In file included from...
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f7xx.h(128): warning: In file included from...
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f746xx.h(157): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  SPDIF_RX_IRQn               = 97,     /*!< SPDIF-RX global Interrupt                                         */
+                                  ^~
+1 warning generated.
+compiling system_stm32f7xx.c...
+project.cpp(6): warning: no previous extern declaration for non-static variable 'BAUDRATE' [-Wmissing-variable-declarations]
+unsigned long int BAUDRATE,Over8;
+                  ^
+project.cpp(6): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned long int BAUDRATE,Over8;
+^
+project.cpp(6): warning: no previous extern declaration for non-static variable 'Over8' [-Wmissing-variable-declarations]
+unsigned long int BAUDRATE,Over8;
+                           ^
+project.cpp(6): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned long int BAUDRATE,Over8;
+^
+project.cpp(11): warning: no previous extern declaration for non-static variable 'vec' [-Wmissing-variable-declarations]
+int vec[]={1<<5,1<<6,1<<8,1<<9};
+    ^
+project.cpp(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int vec[]={1<<5,1<<6,1<<8,1<<9};
+^
+project.cpp(12): warning: no previous extern declaration for non-static variable 'a' [-Wmissing-variable-declarations]
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+    ^
+project.cpp(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+^
+project.cpp(12): warning: no previous extern declaration for non-static variable 'modo' [-Wmissing-variable-declarations]
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+        ^
+project.cpp(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+^
+project.cpp(12): warning: no previous extern declaration for non-static variable 'cont' [-Wmissing-variable-declarations]
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+               ^
+project.cpp(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+^
+project.cpp(12): warning: no previous extern declaration for non-static variable 'pin' [-Wmissing-variable-declarations]
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+                      ^
+project.cpp(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+^
+project.cpp(12): warning: no previous extern declaration for non-static variable 'o' [-Wmissing-variable-declarations]
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+                            ^
+project.cpp(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+^
+project.cpp(12): warning: no previous extern declaration for non-static variable 'l' [-Wmissing-variable-declarations]
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+                                ^
+project.cpp(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+^
+project.cpp(12): warning: no previous extern declaration for non-static variable 'y' [-Wmissing-variable-declarations]
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+                                    ^
+project.cpp(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int a=0,modo=0,cont=0,pin=0,o=0,l=0,y=0;
+^
+project.cpp(13): warning: no previous extern declaration for non-static variable 'randomNumber' [-Wmissing-variable-declarations]
+int randomNumber=0;
+    ^
+project.cpp(13): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int randomNumber=0;
+^
+project.cpp(14): warning: no previous extern declaration for non-static variable 'val' [-Wmissing-variable-declarations]
+char val=' ',rx[]={'0','0','0','0','0','0','0','0'},mens[11];
+     ^
+project.cpp(14): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char val=' ',rx[]={'0','0','0','0','0','0','0','0'},mens[11];
+^
+project.cpp(14): warning: no previous extern declaration for non-static variable 'rx' [-Wmissing-variable-declarations]
+char val=' ',rx[]={'0','0','0','0','0','0','0','0'},mens[11];
+             ^
+project.cpp(14): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char val=' ',rx[]={'0','0','0','0','0','0','0','0'},mens[11];
+^
+project.cpp(14): warning: no previous extern declaration for non-static variable 'mens' [-Wmissing-variable-declarations]
+char val=' ',rx[]={'0','0','0','0','0','0','0','0'},mens[11];
+                                                    ^
+project.cpp(14): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char val=' ',rx[]={'0','0','0','0','0','0','0','0'},mens[11];
+^
+project.cpp(17): warning: use of old-style cast [-Wold-style-cast]
+        RCC->APB1ENR |= RCC_APB1ENR_USART2EN;//Habilitar USART2
+        ^~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1547): note: expanded from macro 'RCC'
+#define RCC                 ((RCC_TypeDef *) RCC_BASE)
+                             ^               ~~~~~~~~
+project.cpp(18): warning: use of old-style cast [-Wold-style-cast]
+        RCC->AHB1ENR|=1<<3;//Encender Puerto D
+        ^~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1547): note: expanded from macro 'RCC'
+#define RCC                 ((RCC_TypeDef *) RCC_BASE)
+                             ^               ~~~~~~~~
+project.cpp(19): warning: use of old-style cast [-Wold-style-cast]
+        GPIOD->MODER |= 0x2800; //Funci<F3>n alternante PD5 y PD6
+        ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+project.cpp(20): warning: use of old-style cast [-Wold-style-cast]
+        GPIOD->AFR[0] |=0x77<<20;//AF7 en PD5 y PD6
+        ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+project.cpp(24): warning: use of old-style cast [-Wold-style-cast]
+        USART2->BRR |= BAUDRATE;
+        ^~~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1491): note: expanded from macro 'USART2'
+#define USART2              ((USART_TypeDef *) USART2_BASE)
+                             ^                 ~~~~~~~~~~~
+project.cpp(25): warning: use of old-style cast [-Wold-style-cast]
+        USART2->CR1 |=(USART_CR1_TE | USART_CR1_UE | USART_CR1_RE | USART_CR1_RXNEIE | Over8<<15);
+        ^~~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1491): note: expanded from macro 'USART2'
+#define USART2              ((USART_TypeDef *) USART2_BASE)
+                             ^                 ~~~~~~~~~~~
+project.cpp(29): warning: use of old-style cast [-Wold-style-cast]
+        RCC->APB1ENR |= RCC_APB1ENR_TIM5EN | RCC_APB1ENR_TIM4EN | RCC_APB1ENR_TIM3EN ;
+        ^~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1547): note: expanded from macro 'RCC'
+#define RCC                 ((RCC_TypeDef *) RCC_BASE)
+                             ^               ~~~~~~~~
+project.cpp(32): warning: use of old-style cast [-Wold-style-cast]
+        TIM5->PSC = 319;
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1478): note: expanded from macro 'TIM5'
+#define TIM5                ((TIM_TypeDef *) TIM5_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(34): warning: use of old-style cast [-Wold-style-cast]
+        TIM5->ARR = 999;
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1478): note: expanded from macro 'TIM5'
+#define TIM5                ((TIM_TypeDef *) TIM5_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(36): warning: use of old-style cast [-Wold-style-cast]
+        TIM5->DIER |= TIM_DIER_UIE;
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1478): note: expanded from macro 'TIM5'
+#define TIM5                ((TIM_TypeDef *) TIM5_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(37): warning: use of old-style cast [-Wold-style-cast]
+        TIM5->CR1 |=  TIM_CR1_CEN;
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1478): note: expanded from macro 'TIM5'
+#define TIM5                ((TIM_TypeDef *) TIM5_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(41): warning: use of old-style cast [-Wold-style-cast]
+        TIM4->PSC = 63999;
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1477): note: expanded from macro 'TIM4'
+#define TIM4                ((TIM_TypeDef *) TIM4_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(43): warning: use of old-style cast [-Wold-style-cast]
+        TIM4->ARR = 9999;
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1477): note: expanded from macro 'TIM4'
+#define TIM4                ((TIM_TypeDef *) TIM4_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(45): warning: use of old-style cast [-Wold-style-cast]
+        TIM4->DIER |= TIM_DIER_UIE;
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1477): note: expanded from macro 'TIM4'
+#define TIM4                ((TIM_TypeDef *) TIM4_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(46): warning: use of old-style cast [-Wold-style-cast]
+        TIM4->CR1 |=  TIM_CR1_CEN;
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1477): note: expanded from macro 'TIM4'
+#define TIM4                ((TIM_TypeDef *) TIM4_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(50): warning: use of old-style cast [-Wold-style-cast]
+        TIM3->PSC = 31999;
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1476): note: expanded from macro 'TIM3'
+#define TIM3                ((TIM_TypeDef *) TIM3_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(52): warning: use of old-style cast [-Wold-style-cast]
+        TIM3->ARR = 999;
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1476): note: expanded from macro 'TIM3'
+#define TIM3                ((TIM_TypeDef *) TIM3_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(54): warning: use of old-style cast [-Wold-style-cast]
+        TIM3->DIER |= TIM_DIER_UIE;
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1476): note: expanded from macro 'TIM3'
+#define TIM3                ((TIM_TypeDef *) TIM3_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(55): warning: use of old-style cast [-Wold-style-cast]
+        TIM3->CR1 |=  TIM_CR1_CEN;
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1476): note: expanded from macro 'TIM3'
+#define TIM3                ((TIM_TypeDef *) TIM3_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(59): warning: use of old-style cast [-Wold-style-cast]
+        RCC->AHB1ENR|=1<<2;
+        ^~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1547): note: expanded from macro 'RCC'
+#define RCC                 ((RCC_TypeDef *) RCC_BASE)
+                             ^               ~~~~~~~~
+project.cpp(60): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC->MODER|=1<<10|1<<12|1<<16|1<<18;//IN1 PC5, IN2 PC6, IN3 PC8, IN4 PC9
+        ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+project.cpp(63): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC->MODER|=1<<14;
+        ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+project.cpp(65): warning: 'nullptr' is incompatible with C++98 [-Wc++98-compat]
+    std::srand(std::time(nullptr));
+                         ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__config(573): note: expanded from macro 'nullptr'
+#    define nullptr __nullptr
+                    ^
+project.cpp(88): warning: use of old-style cast [-Wold-style-cast]
+   USART2->TDR = value;
+   ^~~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1491): note: expanded from macro 'USART2'
+#define USART2              ((USART_TypeDef *) USART2_BASE)
+                             ^                 ~~~~~~~~~~~
+project.cpp(88): warning: implicit conversion changes signedness: 'int' to 'std::uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   USART2->TDR = value;
+               ~ ^~~~~
+project.cpp(89): warning: use of old-style cast [-Wold-style-cast]
+   while(!(USART2->ISR & USART_ISR_TXE));
+           ^~~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1491): note: expanded from macro 'USART2'
+#define USART2              ((USART_TypeDef *) USART2_BASE)
+                             ^                 ~~~~~~~~~~~
+project.cpp(95): warning: use of old-style cast [-Wold-style-cast]
+                while (USART2->ISR & USART_ISR_RXNE){
+                       ^~~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1491): note: expanded from macro 'USART2'
+#define USART2              ((USART_TypeDef *) USART2_BASE)
+                             ^                 ~~~~~~~~~~~
+project.cpp(96): warning: use of old-style cast [-Wold-style-cast]
+                        val=(char)(USART2->RDR & 0xFF);
+                                   ^~~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1491): note: expanded from macro 'USART2'
+#define USART2              ((USART_TypeDef *) USART2_BASE)
+                             ^                 ~~~~~~~~~~~
+project.cpp(96): warning: use of old-style cast [-Wold-style-cast]
+                        val=(char)(USART2->RDR & 0xFF);
+                            ^     ~~~~~~~~~~~~~~~~~~~~
+project.cpp(142): warning: use of old-style cast [-Wold-style-cast]
+                                                                        GPIOC->ODR|=vec[i];
+                                                                        ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+project.cpp(142): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                                                        GPIOC->ODR|=vec[i];
+                                                                                  ~~^~~~~~
+project.cpp(143): warning: use of old-style cast [-Wold-style-cast]
+                                                                        GPIOC->ODR&=vec[i];
+                                                                        ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+project.cpp(143): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                                                        GPIOC->ODR&=vec[i];
+                                                                                  ~~^~~~~~
+project.cpp(93): warning: no previous prototype for function 'USART2_IRQHandler' [-Wmissing-prototypes]
+        void USART2_IRQHandler(void){
+             ^
+project.cpp(93): note: declare 'static' if the function is not intended to be used outside of this translation unit
+        void USART2_IRQHandler(void){
+        ^
+        static 
+project.cpp(162): warning: use of old-style cast [-Wold-style-cast]
+        TIM5->SR &= ~ (1<<0); //Atendemos la interrupci<F3>n
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1478): note: expanded from macro 'TIM5'
+#define TIM5                ((TIM_TypeDef *) TIM5_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(162): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        TIM5->SR &= ~ (1<<0); //Atendemos la interrupci<F3>n
+                 ~~ ^~~~~~~~
+project.cpp(164): warning: use of old-style cast [-Wold-style-cast]
+                        GPIOC->ODR|=vec[cont];
+                        ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+project.cpp(164): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                        GPIOC->ODR|=vec[cont];
+                                  ~~^~~~~~~~~
+project.cpp(165): warning: use of old-style cast [-Wold-style-cast]
+                        GPIOC->ODR&=vec[cont];
+                        ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+project.cpp(165): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                        GPIOC->ODR&=vec[cont];
+                                  ~~^~~~~~~~~
+project.cpp(161): warning: no previous prototype for function 'TIM5_IRQHandler' [-Wmissing-prototypes]
+void TIM5_IRQHandler(void){      // Interrupci<F3>n Timer 
+     ^
+project.cpp(161): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM5_IRQHandler(void){      // Interrupci<F3>n Timer 
+^
+static 
+project.cpp(174): warning: use of old-style cast [-Wold-style-cast]
+        TIM4->SR &= ~ (1<<0); //Atendemos la interrupci<F3>n
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1477): note: expanded from macro 'TIM4'
+#define TIM4                ((TIM_TypeDef *) TIM4_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(174): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        TIM4->SR &= ~ (1<<0); //Atendemos la interrupci<F3>n
+                 ~~ ^~~~~~~~
+project.cpp(173): warning: no previous prototype for function 'TIM4_IRQHandler' [-Wmissing-prototypes]
+void TIM4_IRQHandler(void){      // Interrupci<F3>n Timer 
+     ^
+project.cpp(173): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM4_IRQHandler(void){      // Interrupci<F3>n Timer 
+^
+static 
+project.cpp(180): warning: use of old-style cast [-Wold-style-cast]
+        TIM3->SR &= ~ (1<<0); //Atendemos la interrupci<F3>n
+        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1476): note: expanded from macro 'TIM3'
+#define TIM3                ((TIM_TypeDef *) TIM3_BASE)
+                             ^               ~~~~~~~~~
+project.cpp(180): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        TIM3->SR &= ~ (1<<0); //Atendemos la interrupci<F3>n
+                 ~~ ^~~~~~~~
+project.cpp(183): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOC->ODR|=1<<7;
+                                ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+project.cpp(186): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOC->ODR&=~(1<<7);
+                                ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+project.cpp(186): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                GPIOC->ODR&=~(1<<7);
+                                          ~~^~~~~~~
+project.cpp(178): warning: no previous prototype for function 'TIM3_IRQHandler' [-Wmissing-prototypes]
+void TIM3_IRQHandler(void){      // Interrupci<F3>n Timer 
+     ^
+project.cpp(178): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM3_IRQHandler(void){      // Interrupci<F3>n Timer 
+^
+static 
+64 warnings generated.
+compiling project.cpp...
+linking...
+Program Size: Code=2966 RO-data=774 RW-data=28 ZI-data=1912  
+".\Objects\Project.axf" - 0 Error(s), 65 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F7xx_DFP.2.14.1.pack
+                Keil.STM32F7xx_DFP.2.14.1
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.2.5
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/lauri/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.2.5
+      Source file:   MDK/Device/Source/ARM/STM32F74x_75x_OPT.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h
+      Source file:   MDK/Device/Source/ARM/STM32F74x_75x_OTP.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/arm/startup_stm32f746xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/system_stm32f7xx.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

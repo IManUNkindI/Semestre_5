@@ -1,0 +1,198 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.42.0.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ManUNkind Andres , HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.42.0.0
+Toolchain Path:  C:\Users\Andres Felipe\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.23
+Assembler:       Armasm.exe V6.23
+Linker/Locator:  ArmLink.exe V6.23
+Library Manager: ArmAr.exe V6.23
+Hex Converter:   FromElf.exe V6.23
+CPU DLL:         SARMCM3.DLL V5.42.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+D:\Universidad\5\Micros Lab\LAB 3\Lab 3.uvprojx
+Project File Date:  08/01/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.23', folder: 'C:\Users\Andres Felipe\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f767xx.s...
+RTE/Device/STM32F767ZITx/system_stm32f7xx.c(47): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f7xx.h(133): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(184): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\core_cm7.h(170): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: unknown type name 'inline'
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: expected ';' after top level declarator
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      |                              ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: unknown type name 'inline'
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: expected ';' after top level declarator
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      |                             ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: unknown type name 'inline'
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: expected ';' after top level declarator
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      |                              ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: unknown type name 'inline'
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: expected ';' after top level declarator
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      |                              ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(621): error: unknown type name 'inline'
+  621 | __STATIC_FORCEINLINE void __enable_irq(void)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(634): error: unknown type name 'inline'
+  634 | __STATIC_FORCEINLINE void __disable_irq(void)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(646): error: unknown type name 'inline'
+  646 | __STATIC_FORCEINLINE void __enable_fault_irq(void)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(657): error: unknown type name 'inline'
+  657 | __STATIC_FORCEINLINE void __disable_fault_irq(void)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: unknown type name 'inline'
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: expected ';' after top level declarator
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      |                              ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(685): error: unknown type name 'inline'
+  685 | __STATIC_FORCEINLINE void __set_FPSCR(uint32_t fpscr)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/STM32F767ZITx/system_stm32f7xx.c(47): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f7xx.h(133): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(184): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\core_cm7.h(170): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(86): error: unknown type name 'inline'
+   86 | __STATIC_FORCEINLINE void __STRBT(uint8_t value, volatile uint8_t *ptr)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/STM32F767ZITx/system_stm32f7xx.c(47): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f7xx.h(133): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(184): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\core_cm7.h(170): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(98): error: unknown type name 'inline'
+   98 | __STATIC_FORCEINLINE void __STRHT(uint16_t value, volatile uint16_t *ptr)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/STM32F767ZITx/system_stm32f7xx.c(47): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f7xx.h(133): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(184): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\core_cm7.h(170): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(110): error: unknown type name 'inline'
+  110 | __STATIC_FORCEINLINE void __STRT(uint32_t value, volatile uint32_t *ptr)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/STM32F767ZITx/system_stm32f7xx.c(47): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f7xx.h(133): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(184): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\core_cm7.h(170): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(128): error: unknown type name 'inline'
+  128 | __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
+      | ^
+C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling system_stm32f7xx.c...
+compiling Lab 3.cpp...
+".\Objects\Lab 3.axf" - 19 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.2.0.pack
+                ARM::CMSIS@6.2.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.1
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F7xx_DFP.2.15.0.pack
+                Keil::STM32F7xx_DFP@2.15.0
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.2.5
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Andres Felipe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+  C:/Users/Andres Felipe/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.1
+
+   * Component: Keil::Device:Startup@1.2.5
+      Source file:   MDK/Device/Source/ARM/STM32F76x_77x_OPT.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h
+      Source file:   MDK/Device/Source/ARM/STM32F76x_77x_OTP.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/arm/startup_stm32f767xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/system_stm32f7xx.c
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

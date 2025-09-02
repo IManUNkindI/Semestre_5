@@ -1,0 +1,253 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: laura gutierrez, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+C:\Users\lauri\Desktop\MICROS 2023\tarea1.uvprojx
+Project File Date:  02/22/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling system_stm32f7xx.c...
+tarea1.cpp(4): warning: no previous extern declaration for non-static variable 'v1' [-Wmissing-variable-declarations]
+        int v1=0, v2=0, valor1=0, valor2=0,prom;
+            ^
+tarea1.cpp(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+        int v1=0, v2=0, valor1=0, valor2=0,prom;
+        ^
+tarea1.cpp(4): warning: no previous extern declaration for non-static variable 'v2' [-Wmissing-variable-declarations]
+        int v1=0, v2=0, valor1=0, valor2=0,prom;
+                  ^
+tarea1.cpp(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+        int v1=0, v2=0, valor1=0, valor2=0,prom;
+        ^
+tarea1.cpp(4): warning: no previous extern declaration for non-static variable 'valor1' [-Wmissing-variable-declarations]
+        int v1=0, v2=0, valor1=0, valor2=0,prom;
+                        ^
+tarea1.cpp(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+        int v1=0, v2=0, valor1=0, valor2=0,prom;
+        ^
+tarea1.cpp(4): warning: no previous extern declaration for non-static variable 'valor2' [-Wmissing-variable-declarations]
+        int v1=0, v2=0, valor1=0, valor2=0,prom;
+                                  ^
+tarea1.cpp(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+        int v1=0, v2=0, valor1=0, valor2=0,prom;
+        ^
+tarea1.cpp(4): warning: no previous extern declaration for non-static variable 'prom' [-Wmissing-variable-declarations]
+        int v1=0, v2=0, valor1=0, valor2=0,prom;
+                                           ^
+tarea1.cpp(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+        int v1=0, v2=0, valor1=0, valor2=0,prom;
+        ^
+tarea1.cpp(10): warning: use of old-style cast [-Wold-style-cast]
+                        RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;
+                        ^~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1547): note: expanded from macro 'RCC'
+#define RCC                 ((RCC_TypeDef *) RCC_BASE)
+                             ^               ~~~~~~~~
+tarea1.cpp(11): warning: use of old-style cast [-Wold-style-cast]
+                        RCC->APB2ENR |= RCC_APB2ENR_ADC1EN;
+                        ^~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1547): note: expanded from macro 'RCC'
+#define RCC                 ((RCC_TypeDef *) RCC_BASE)
+                             ^               ~~~~~~~~
+tarea1.cpp(12): warning: use of old-style cast [-Wold-style-cast]
+                        GPIOA->MODER |= (3<<4);//analog mode
+                        ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1535): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+tarea1.cpp(13): warning: use of old-style cast [-Wold-style-cast]
+                        GPIOA->PUPDR |= 0x000;//no pull up/dowm
+                        ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1535): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+tarea1.cpp(14): warning: use of old-style cast [-Wold-style-cast]
+                        ADC1->CR1 |= (2<<24);//resolucion 8bits
+                        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1512): note: expanded from macro 'ADC1'
+#define ADC1                ((ADC_TypeDef *) ADC1_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(15): warning: use of old-style cast [-Wold-style-cast]
+                        ADC->CCR |= 0x10000;//frecuencia 4MHz
+                        ^~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1511): note: expanded from macro 'ADC'
+#define ADC                 ((ADC_Common_TypeDef *) ADC_BASE)
+                             ^                      ~~~~~~~~
+tarea1.cpp(16): warning: use of old-style cast [-Wold-style-cast]
+                        ADC1->SMPR2 |= 0x28000;//112 ciclos
+                        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1512): note: expanded from macro 'ADC1'
+#define ADC1                ((ADC_TypeDef *) ADC1_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(17): warning: use of old-style cast [-Wold-style-cast]
+                        ADC1->CR2 |= ((0<<11)|(1<<1)|(1<<0));//encender adc, conversion continua, alinear derecha
+                        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1512): note: expanded from macro 'ADC1'
+#define ADC1                ((ADC_TypeDef *) ADC1_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(18): warning: use of old-style cast [-Wold-style-cast]
+                        ADC1->SQR3 = (2<<0);//canal 2
+                        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1512): note: expanded from macro 'ADC1'
+#define ADC1                ((ADC_TypeDef *) ADC1_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(21): warning: use of old-style cast [-Wold-style-cast]
+                        RCC->APB2ENR |= RCC_APB2ENR_ADC2EN;
+                        ^~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1547): note: expanded from macro 'RCC'
+#define RCC                 ((RCC_TypeDef *) RCC_BASE)
+                             ^               ~~~~~~~~
+tarea1.cpp(22): warning: use of old-style cast [-Wold-style-cast]
+                        GPIOA->MODER |=(3<<0);//analog mode
+                        ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1535): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+tarea1.cpp(23): warning: use of old-style cast [-Wold-style-cast]
+                        GPIOA->PUPDR |=0x0000;//no pull up/dowm
+                        ^~~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1535): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+tarea1.cpp(24): warning: use of old-style cast [-Wold-style-cast]
+                        ADC2->CR1 |= 0x1000000;//resolucion 10bits
+                        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1513): note: expanded from macro 'ADC2'
+#define ADC2                ((ADC_TypeDef *) ADC2_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(26): warning: use of old-style cast [-Wold-style-cast]
+                        ADC2->SMPR2|= 0x1C0000;//480 ciclos
+                        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1513): note: expanded from macro 'ADC2'
+#define ADC2                ((ADC_TypeDef *) ADC2_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(27): warning: use of old-style cast [-Wold-style-cast]
+                        ADC2->CR2|= ((1<<11)|(1<<1)|(1<<0));//encender adc, conversion continua, alinear izq
+                        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1513): note: expanded from macro 'ADC2'
+#define ADC2                ((ADC_TypeDef *) ADC2_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(28): warning: use of old-style cast [-Wold-style-cast]
+                        ADC2->SQR3|= (0<<0);//canal 0
+                        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1513): note: expanded from macro 'ADC2'
+#define ADC2                ((ADC_TypeDef *) ADC2_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(34): warning: use of old-style cast [-Wold-style-cast]
+                ADC1->CR2 |= (1<<30); //inicia la conversion
+                ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1512): note: expanded from macro 'ADC1'
+#define ADC1                ((ADC_TypeDef *) ADC1_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(35): warning: use of old-style cast [-Wold-style-cast]
+                while((ADC1->SR & (1<<1))==0) //conversion no ha terminado
+                       ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1512): note: expanded from macro 'ADC1'
+#define ADC1                ((ADC_TypeDef *) ADC1_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(37): warning: use of old-style cast [-Wold-style-cast]
+                        ADC1->SR=0; //bandera en 0
+                        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1512): note: expanded from macro 'ADC1'
+#define ADC1                ((ADC_TypeDef *) ADC1_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(39): warning: use of old-style cast [-Wold-style-cast]
+                v1=ADC1->DR; //dato conversion
+                   ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1512): note: expanded from macro 'ADC1'
+#define ADC1                ((ADC_TypeDef *) ADC1_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(39): warning: implicit conversion changes signedness: 'volatile std::uint32_t' (aka 'volatile unsigned int') to 'int' [-Wsign-conversion]
+                v1=ADC1->DR; //dato conversion
+                  ~~~~~~~^~
+tarea1.cpp(42): warning: use of old-style cast [-Wold-style-cast]
+                ADC2->CR2 |= (1<<30); //inicia la conversion
+                ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1513): note: expanded from macro 'ADC2'
+#define ADC2                ((ADC_TypeDef *) ADC2_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(43): warning: use of old-style cast [-Wold-style-cast]
+                while((ADC2->SR & (1<<1))==0) //conversion no ha terminado
+                       ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1513): note: expanded from macro 'ADC2'
+#define ADC2                ((ADC_TypeDef *) ADC2_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(45): warning: use of old-style cast [-Wold-style-cast]
+                        ADC2->SR=0; //bandera en 0
+                        ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1513): note: expanded from macro 'ADC2'
+#define ADC2                ((ADC_TypeDef *) ADC2_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(47): warning: use of old-style cast [-Wold-style-cast]
+                v2=((ADC2->DR)); //dato conversion
+                     ^~~~
+C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h(1513): note: expanded from macro 'ADC2'
+#define ADC2                ((ADC_TypeDef *) ADC2_BASE)
+                             ^               ~~~~~~~~~
+tarea1.cpp(47): warning: implicit conversion changes signedness: 'volatile std::uint32_t' (aka 'volatile unsigned int') to 'int' [-Wsign-conversion]
+                v2=((ADC2->DR)); //dato conversion
+                  ~  ~~~~~~^~
+tarea1.cpp(50): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+32 warnings generated.
+compiling tarea1.cpp...
+assembling startup_stm32f767xx.s...
+linking...
+Program Size: Code=784 RO-data=520 RW-data=0 ZI-data=1648  
+".\Objects\tarea1.axf" - 0 Error(s), 32 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F7xx_DFP.2.14.1.pack
+                Keil.STM32F7xx_DFP.2.14.1
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.2.5
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/lauri/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/lauri/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.14.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.2.5
+      Source file:   Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/arm/startup_stm32f767xx.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h
+      Source file:   MDK/Device/Source/ARM/STM32F76x_77x_OTP.s
+      Source file:   MDK/Device/Source/ARM/STM32F76x_77x_OPT.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/system_stm32f7xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

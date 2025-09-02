@@ -1,0 +1,109 @@
+#include <stdio.h>
+#include <math.h>
+#include <stm32f7xx.h>
+
+int cod1,cod2,cod3;
+double R1,R2,R3;
+int envioDatico(int rx);	
+
+int main(){
+	//ADC1-IN3->PA3
+	//ADC2-IN4->PA4
+	//ADC3-IN5->PF7
+	RCC->AHB1ENR|=(1<<0)|(1<<5);
+	RCC->APB2ENR|=(7<<8);
+	GPIOA->MODER|=0x3C0;
+	GPIOF->MODER|=0xC000;
+	GPIOA->OSPEEDR |=0x140;//velocidad media
+	GPIOF->OSPEEDR|=0x4000;
+	
+	//UART 4 PC10(TX) y PC11(RX)
+	//OVER = 0;
+	GPIOC -> MODER |= 0xA00000;
+	GPIOC -> AFR[1] = 0x8800; 
+	UART4 -> BRR |= 0x22B; //BAUDIOS 14400
+	UART4-> CR1 |= 0x2C;  // TE RE RXNE
+	UART4 -> CR2 |= 0x2000; // 2 BITS STOP
+	UART4 -> CR1 |= 0x1;// UE = 1
+	NVIC_EnableIRQ(UART4_IRQn);
+	
+	ADC->CCR |= 0x10000;//Fr 4MHz
+	ADC1->CR1 |= 0x2000000; //RESOLUCIÓN DE 8 BITS
+	ADC1->CR2 |= 0x3;//ALINEADO A LA DERECHA
+	ADC1->SMPR2 |= 0x28000;// SE CONFIGURAN 112 CICLOS
+	ADC2->CR1 |= 0x2000000; //RESOLUCIÓN DE 8 BITS
+	ADC2->CR2 |= 0x3;//ALINEADO A LA DERECHA
+	ADC2->SMPR2 |= 0x28000;// SE CONFIGURAN 112 CICLOS
+	ADC3->CR1 |= 0x2000000; //RESOLUCIÓN DE 8 BITS
+	ADC3->CR2 |= 0x3;//ALINEADO A LA DERECHA
+	ADC3->SMPR2 |= 0x28000;// SE CONFIGURAN 112 CICLOS
+	ADC1->SQR3|=3;
+	ADC2->SQR3|=4;
+	ADC3->SQR3|=5;
+	while(1){
+		ADC1->CR2 |= (1<<30); //CONVERSION SWART 1
+		while((ADC1->SR & (1<<1))==0) 
+		{
+			ADC1->SR=0; 
+		}
+		cod1=ADC1->DR;
+		ADC2->CR2 |= (1<<30); //CONVERSION SWART 1
+		while((ADC2->SR & (1<<1))==0) 
+		{
+			ADC2->SR=0; 
+		}
+		cod2=ADC2->DR;
+		ADC3->CR2 |= (1<<30); //CONVERSION SWART 1
+		while((ADC3->SR & (1<<1))==0) 
+		{
+			ADC3->SR=0; 
+		}
+		cod3=ADC3->DR;
+		
+		R1=995*(pow(cod1,-0.45));
+		R2=970*(pow(cod2,-0.4));
+		R3=995*(pow(cod3,-0.48));
+		
+  if(cod1 >= 500)
+	{
+		envioDatico('R');
+		envioDatico('A');
+		envioDatico('R');
+		envioDatico('E');
+	}
+		if(cod1 && cod2 >= 500)
+	{
+		envioDatico('O');
+		envioDatico('H');
+		envioDatico('O');
+		envioDatico('H');
+	}
+	if(cod1 >= 500 & cod2 >= 500 & cod3 >= 500)
+	{
+		envioDatico('A');
+		envioDatico('Y');
+		envioDatico('N');
+		envioDatico('O');
+	}
+		if(cod1 >= 500 & cod2 >= 500 & cod3 >= 500)
+	{
+		envioDatico('A');
+		envioDatico('Y');
+		envioDatico('N');
+		envioDatico('O');
+	}
+	if(cod1 <=500 & cod2 <= 500 & cod3 <=500)
+	{
+		envioDatico('C');
+		envioDatico('O');
+		envioDatico('O');
+		envioDatico('L');
+	}
+	}
+}
+
+int envioDatico(int rx) { 
+   UART4->TDR = rx;
+   while(!(UART4->ISR & 1<<7)); 
+   return 0;
+ }

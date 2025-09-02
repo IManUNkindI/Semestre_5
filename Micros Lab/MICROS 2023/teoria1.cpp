@@ -1,0 +1,42 @@
+#include "stm32f7xx.h"
+
+// A=0x8,B=0x3,C=0x46,D=0x21,E=0x6,F=0xE,G=0x10,H=0x9,I=0x30,J=0x61,K=0x9,L=0x47,M=0x6A,N=0x2B;
+// O=0x40,P=0xC,Q=0x18,R=0x2F,S=0x12,T=0x7,U=0x41,V=0x63,W=0x55,X=0x9,Y=0x11,Z=0x24;
+
+{0x38,0x77,0x41,0x5,0x77}
+
+// (
+int main(){
+	RCC->AHB1ENR|=0xFF;
+	GPIOE->MODER|=0x0; // DIP SWITCH (1<<4)|(1<<5)|(1<<6)|(1<<7)
+	GPIOE->OTYPER &= 0x0;
+	GPIOE->OSPEEDR &= 0x55;
+	GPIOE->PUPDR|=0xAA; // PE 2 
+	GPIOD->MODER|=0x1555; //Display PD0-PG6 ANODO
+  GPIOD->OSPEEDR |= 0x1555;
+	// int laura[5] = {0x27,0x38,0x21,0x4F,0x38}; 
+  GPIOD->ODR =0x38;
+	
+	int bt1;
+	while(1){
+	bt1= GPIOE->IDR &(0xF) == 0x4; //PE2
+	
+	if(bt1!=0){ // PE Activo
+		for(int i=0; i<2000000; i++){ 
+			  GPIOD->ODR &=~ 0x27;//L
+		}
+		/for(int i=0; i<2000000; i++){ 
+			  GPIOD->ODR |=0x38;//A
+		}
+			for(int i=0; i<2000000; i++){ 
+			  GPIOD->ODR |=0x21;//U
+		}
+			for(int i=0; i<2000000; i++){ 
+			  GPIOD->ODR |=0x4F;//R
+		}
+			for(int i=0; i<2000000; i++){ 
+			  GPIOD->ODR |=0x38;//A
+		}*/
+ }
+}
+}
